@@ -17,6 +17,8 @@ return {
         settings = {
           enableSnippets = true,
           updateImportsOnRename = true,
+          completeFunctionCalls = true,
+          enableSdkFormatter = true,
         },
       },
     })
