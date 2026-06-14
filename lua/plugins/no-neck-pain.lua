@@ -3,7 +3,7 @@ return {
   version = "*",
   cmd = { "NoNeckPain" },
   opts = {
-    width = 100,
+    width = 130,
     mappings = {
       enabled = true,
       toggle = "<leader>mnp",

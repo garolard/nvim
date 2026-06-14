@@ -7,8 +7,11 @@ return {
   },
   opts = {
     decorations = {
-      app_version = true,
+      statusline = {
+        app_version = true,
+      },
     },
+    widget_guides = { enabled = true },
     lsp = {
       color = {
         enabled = true,
@@ -20,5 +23,14 @@ return {
         enableSdkFormatter = true,
       },
     },
+  },
+  config = true,
+  keys = {
+    { "<leader>mfr", "<cmd>FlutterRun<cr>", desc = "Fluter Run" },
+    { "<leader>mfd", "<cmd>FlutterDevices<cr>", desc = "Flutter Devices" },
+    { "<leader>mfl", "<cmd>FlutterReload<cr>", desc = "Flutter Hot Reload" },
+    { "<leader>mfs", "<cmd>FlutterRestart<cr>", desc = "Flutter Hot Restart" },
+    { "<leader>mft", "<cmd>FlutterLogToggle<cr>", desc = "Flutter Log Toggle" },
+    { "<leader>mfq", "<cmd>FlutterQuit<cr>", desc = "Flutter Quit" },
   },
 }
